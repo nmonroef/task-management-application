@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+</head>
+<body>
+      <!-- Container for the welcome message -->
+    <div id="welcomeContainer">   
+    <!-- Container for the typed welcome text -->
+        <div id ="welcomeText"></div>
+    </div>
+    <div id="infoContainer">
+         <div id = "statsContainer">
+            <div class="innerStatContainer">
+                <h2>Task Name:</h2>
+                <p id="taskName">Study Javascript</p>
+            </div>
+            <div class="innerStatContainer">
+                <h2>Task Priority:</h2>
+                <p id="priority">High</p>
+            </div>
+            <div class="innerStatContainer">
+                <h2>Task Status:</h2>
+                <p id="progress">In Progress</p>
+            </div>
+            <p id="quote">True behavior change is forcing yourself to do something that <br> you normally wouldn't do.</p>
+         </div> 
+         <div id = "taskContainer">
+            <div id="taskList"></div>
+                <h2>Task List</h2>
+                <form>
+                    <input id="userInput" type="text" placeholder="Enter Task Here">
+                    <button id="addButton" type="button">Add</button>
+
+                </form>
+             </div>
+    </div>
+   
+
+    <script src="main.js"></script>
+</body>
+</html>
