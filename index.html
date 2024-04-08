@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Task Management Application</title>
 </head>
 <body>
-      <!-- Container for the welcome message -->
+    <!-- Container for the welcome message -->
     <div id="welcomeContainer">   
-    <!-- Container for the typed welcome text -->
+        <!-- Container for the typed welcome text -->
         <div id ="welcomeText"></div>
     </div>
+    <!-- Container for task information -->
     <div id="infoContainer">
-         <div id = "statsContainer">
+        <!-- Container for task statistics -->
+        <div id="statsContainer">
+            <!-- Individual task statistics -->
             <div class="innerStatContainer">
-                <h2>Task Name:</h2>
-                <p id="taskName">Study Javascript</p>
+                <h2>Today:</h2>
+                <p id="date"></p>
             </div>
             <div class="innerStatContainer">
-                <h2>Task Priority:</h2>
-                <p id="priority">High</p>
+                <h2>Task Complete:</h2>
+                <p id="numberOfCompleteTask"></p>
             </div>
             <div class="innerStatContainer">
-                <h2>Task Status:</h2>
-                <p id="progress">In Progress</p>
+                <h2>Number of Task:</h2>
+                <p id="taskNumber"></p>
             </div>
+            <!-- Quote -->
             <p id="quote">True behavior change is forcing yourself to do something that <br> you normally wouldn't do.</p>
-         </div> 
-         <div id = "taskContainer">
-            <div id="taskList"></div>
-                <h2>Task List</h2>
-                <form>
-                    <input id="userInput" type="text" placeholder="Enter Task Here">
-                    <button id="addButton" type="button">Add</button>
-
-                </form>
-             </div>
+        </div> 
+        <!-- Container for task list -->
+        <div id="taskContainer">     
+            <h2>Task List</h2>
+            <!-- Form to add tasks -->
+            <form>
+                <input id="userInput" type="text" placeholder="Enter Task Here">
+                <button id="addButton" type="button">Add</button>
+            </form>
+            <!-- List of tasks -->
+            <ul id="taskList" >
+                
+            </ul>
+        </div>
     </div>
-   
-
+    <!-- JavaScript file -->
     <script src="main.js"></script>
 </body>
 </html>

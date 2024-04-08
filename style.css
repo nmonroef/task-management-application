@@ -1,108 +1,147 @@
-
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: monospace,sans-serif;
+    font-family: monospace, sans-serif; /* Using monospace font family for consistency */
 }
+
+/* Styling for the body */
 body {
-    background-image: linear-gradient(to right, rgb(106, 155, 247), rgb(62, 62, 248));
+    background-image: linear-gradient(to right, rgb(106, 155, 247), rgb(62, 62, 248)); /* Background gradient */
 }
+
 /* Styling for the welcomeContainer */
 #welcomeContainer {
-    height: 75px;
-    width: 80%;
-    border-bottom:3px rgba(0, 0, 0, 0.445) solid ;
-    border-radius: 10%;
-    box-shadow: 4px 18px 20px rgb(159, 225, 245);
-    margin-left: 10%;
-    margin-top: 1%;
-    text-align: center;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255));
+    height: 75px; /* Fixed height */
+    width: 80%; /* Taking 80% width of the parent container */
+    border-bottom: 3px rgba(0, 0, 0, 0.445) solid ; /* Border bottom with opacity */
+    border-radius: 10%; /* Rounded corners */
+    box-shadow: 4px 18px 20px rgb(159, 225, 245); /* Box shadow */
+    margin-left: 10%; /* Centering horizontally */
+    margin-top: 1%; /* Adding some space from the top */
+    text-align: center; /* Centering text */
+    z-index: 0; /* Setting z-index */
+    display: flex; /* Flex layout */
+    align-items: center; /* Aligning items vertically */
+    justify-content: center; /* Aligning items horizontally */
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
 }
+
 /* Styling for the text inside welcomeContainer */
 #welcomeContainer #welcomeText {
-    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255));
-    font-size: 20px;   
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
+    font-size: 20px; /* Font size */
 }
+
+/* Styling for the infoContainer */
 #infoContainer {
-    display: flex;
-    
+    display: flex; /* Flex layout */
 }
 
+/* Styling for the statsContainer */
 #statsContainer {
-    height: 450px;
-    width: 30%;
-    border-bottom:3px rgba(0, 0, 0, 0.445) solid ;
-    border-radius: 10%;
-    box-shadow: 4px 18px 20px rgb(159, 225, 245);
-    margin-left: 10%;
-    margin-top: 2%;
-    margin-right: 5%;
-    z-index: 0;
-   
-    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255));
+    height: 450px; /* Fixed height */
+    width: 30%; /* Taking 30% width of the parent container */
+    border-bottom: 3px rgba(0, 0, 0, 0.445) solid ; /* Border bottom with opacity */
+    border-radius: 10%; /* Rounded corners */
+    box-shadow: 4px 18px 20px rgb(159, 225, 245); /* Box shadow */
+    margin-left: 10%; /* Adding some space from the left */
+    margin-top: 2%; /* Adding some space from the top */
+    margin-right: 5%; /* Adding some space from the right */
+    z-index: 0; /* Setting z-index */
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
 }
+
+/* Styling for the taskContainer */
 #taskContainer {
-    height: 450px;
-    width: 45%;
-    border-bottom:3px rgba(0, 0, 0, 0.445) solid ;
-    border-radius: 10%;
-    box-shadow: 4px 18px 20px rgb(159, 225, 245);
-    margin-right: 5%;
-    margin-top: 2%;
-    text-align: center;
-    z-index: 0;
-    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255));
+    height: 450px; /* Fixed height */
+    width: 45%; /* Taking 45% width of the parent container */
+    border-bottom: 3px rgba(0, 0, 0, 0.445) solid ; /* Border bottom with opacity */
+    border-radius: 10%; /* Rounded corners */
+    box-shadow: 4px 18px 20px rgb(159, 225, 245); /* Box shadow */
+    margin-right: 5%; /* Adding some space from the right */
+    margin-top: 2%; /* Adding some space from the top */
+    z-index: 0; /* Setting z-index */
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
+    text-align: center; /* Centering text */
 }
+
+/* Styling for the taskContainer heading */
 #taskContainer h2 {
-padding-top: 5px;
-font-size: 30px;
+    padding-top: 5px; /* Adding some space from the top */
+    font-size: 30px; /* Font size */
+    text-align: center; /* Centering text */
 }
- #statsContainer .innerStatContainer {
-border:3px rgba(0, 0, 0, 0.445) solid ;
-border-radius: 10%;
-box-shadow: 4px 18px 20px rgb(11, 43, 148);
-width: 90%;
-height: 20%;
-margin-top: 20px;
-margin-left: 5%;
-text-align: center;
 
-
+/* Styling for innerStatContainer within statsContainer */
+#statsContainer .innerStatContainer {
+    border: 3px rgba(0, 0, 0, 0.445) solid ; /* Border with opacity */
+    border-radius: 10%; /* Rounded corners */
+    box-shadow: 4px 18px 20px rgb(11, 43, 148); /* Box shadow */
+    width: 90%; /* Taking 90% width of the parent container */
+    height: 20%; /* Taking 20% height of the parent container */
+    margin-top: 20px; /* Adding some space from the top */
+    margin-left: 5%; /* Adding some space from the left */
+    text-align: center; /* Centering text */
 }
+
+/* Styling for the quote inside infoContainer */
 #infoContainer #quote {
-    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255));
-    font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
+    font-size: 20px; /* Font size */
+    text-align: center; /* Centering text */
+    margin-top: 30px; /* Adding some space from the top */
 }
+
+/* Styling for the taskName */
 #taskName {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 15px;
+    text-align: center; /* Centering text */
+    padding-top: 10px; /* Adding some space from the top */
+    font-size: 15px; /* Font size */
 }
+
+/* Styling for the priority */
 #priority {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 18px;
-    color: rgb(167, 4, 4);
+    text-align: center; /* Centering text */
+    padding-top: 10px; /* Adding some space from the top */
+    font-size: 18px; /* Font size */
+    color: rgb(167, 4, 4); /* Setting font color */
 }
 
+/* Styling for the progress */
 #progress {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 15px;  
+    text-align: center; /* Centering text */
+    padding-top: 10px; /* Adding some space from the top */
+    font-size: 15px; /* Font size */
 }
+
+/* Styling for the form */
+form {
+    text-align: center; /* Centering text */
+}
+
+/* Styling for the userInput */
 #userInput {
-    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255));
-    width: 70%;
-    margin-top: 10px;
-
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
+    width: 70%; /* Taking 70% width of the parent container */
+    margin-top: 10px; /* Adding some space from the top */
 }
 
+/* Styling for the taskList */
+#taskList {
+    list-style-type: disc; /* Using disc bullets */
+    margin-top: 30px; /* Adding some space from the top */
+} 
+
+/* Styling for the complete button */
+.finshButton {
+    margin-left: 20px; /* Adding some space from the left */
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
+}
+
+/* Styling for the add button */
+#addButton { 
+    margin-left: 5px; /* Adding some space from the left */
+    background-image: linear-gradient(to right, rgb(188, 235, 250), rgb(168, 161, 255)); /* Background gradient */
+}
